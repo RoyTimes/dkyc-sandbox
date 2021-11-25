@@ -7,16 +7,21 @@ import path from 'path'
 import { mnemonicToMiniSecret, mnemonicValidate } from '@polkadot/util-crypto';
 
 import { File } from '@skyekiwi/file';
-import { AsymmetricEncryption, DefaultSealer, EncryptionSchema } from '@skyekiwi/crypto';
+import { DefaultSealer, EncryptionSchema } from '@skyekiwi/crypto';
 import { WASMContract } from '@skyekiwi/wasm-contract';
 import { Crust } from '@skyekiwi/crust-network';
 import { Driver } from '@skyekiwi/driver';
+import { hexToU8a } from '@skyekiwi/util';
 
-import abi from './mock/skyekiwi';
-import types from './mock/types';
+import abi from './fixtures/skyekiwi';
+import types from './fixtures/types';
 
 const credentialPath = path.join(__dirname, 'mock.jpg');
 require('dotenv').config();
+
+import {
+  Authority0, Authority1
+} from './keys'
 
 const main = async () => {
 
@@ -32,26 +37,34 @@ const main = async () => {
 
   const file = new File({
     fileName: "some_id.jpg",
-    readStream: fs.createReadStream(credentialPath)
+    readStream: fs.createReadStream(credentialPath, {
+      // chunk size at 1MB
+      highWaterMark: 1 * (10 ** 6)
+    })
   });
 
   const sealer = new DefaultSealer();
   sealer.unlock(mnemonicToMiniSecret(mnemonic));
 
+  // share the file with two authorties
   const encryptionSchema = new EncryptionSchema({
     author: sealer.getAuthorKey(),
-    numOfShares: 2,
+    numOfShares: 6,
     threshold: 2,
-    unencryptedPieceCount: 1
+    unencryptedPieceCount: 0
   });
 
-  encryptionSchema.addMember(sealer.getAuthorKey(), 1);
+
+  encryptionSchema.addMember(sealer.getAuthorKey(), 2);
+  encryptionSchema.addMember(hexToU8a(Authority0['publicKey']), 2);
+  encryptionSchema.addMember(hexToU8a(Authority1['publicKey']), 2);
 
   const result = await Driver.upstream(
     file, sealer, encryptionSchema, storage, registry
   );
 
-  console.log(result);
+  // @ts-ignore
+  fs.writeFileSync(path.join(__dirname, 'result.ts'), `export const secretId = ${result['ok']}`)
 
   await storage.disconnect();
   await registry.disconnect();

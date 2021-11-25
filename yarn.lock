@@ -650,70 +650,70 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.2.0.tgz#667bfc6186ae7c9e0b45a08960c551437176e1ca"
   integrity sha512-VkE3KLBmJwcCaVARtQpfuKcKv8gcBmUubrfHGF84dXuuW6jgsRYxPtzcIhPyK9WAPpRt2/xY6zkD9MnRaJzSyw==
 
-"@skyekiwi/crust-network@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/crust-network/-/crust-network-0.3.2-8.tgz#a5c4c251bdaaa50723817cf23b5457842273c9dd"
-  integrity sha512-jLSv3DH1FYCqwQC2o/WGgtzopdpmA5J7HGak3k0nXIMEv3egeqtw0uYmf4fLehRYinFNIus8qW4PgE6so9RhwQ==
+"@skyekiwi/crust-network@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/crust-network/-/crust-network-0.3.2-10.tgz#bc81de8c7c3da77ee6f060067790adc08b7b4448"
+  integrity sha512-jUqNjBPtyc1W4KNTX+i7zEqmd83ViyksJ2ga1DOPzSHdQH02X3zDh18F0ugtQZ6KOY6uqEGaPRFPvFYrUvEMoA==
   dependencies:
     "@babel/runtime" "^7.15.3"
     "@crustio/type-definitions" "^1.2.0"
     "@polkadot/api" "^6.0.5"
     "@polkadot/keyring" "^7.4.1"
     "@polkadot/wasm-crypto" "^4.2.1"
-    "@skyekiwi/ipfs" "0.3.2-8"
-    "@skyekiwi/util" "0.3.2-8"
+    "@skyekiwi/ipfs" "0.3.2-10"
+    "@skyekiwi/util" "0.3.2-10"
 
-"@skyekiwi/crypto@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/crypto/-/crypto-0.3.2-8.tgz#2b9620778d13606a64f3345c70627ad9b1aec21b"
-  integrity sha512-AHwDd3B95kj15zKF3r5hRxeWtvcsD7qdrWJQAzAr/uyvdZrsju17oKLud7Y6ABnNh3s38wiqm/GQRQHoO6rEig==
+"@skyekiwi/crypto@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/crypto/-/crypto-0.3.2-10.tgz#d64663adfa56bc0409d390bfc601d02099c3dc8e"
+  integrity sha512-hboNNbBmfOOM/8Tkt9a2K3xgSERI3bylmsopdsYxrsDTTfuFwhOfYwAuNkAZpV/4rbaCogBhS55FEcU6VwX+NA==
   dependencies:
-    "@skyekiwi/metadata" "0.3.2-8"
+    "@skyekiwi/metadata" "0.3.2-10"
     "@skyekiwi/secrets" "^2.0.1"
-    "@skyekiwi/util" "0.3.2-8"
+    "@skyekiwi/util" "0.3.2-10"
     ethers "^5.4.6"
     tweetnacl "^1.0.3"
 
-"@skyekiwi/driver@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/driver/-/driver-0.3.2-8.tgz#b0b5f4d480519552cad7176cbc010870fa339ba8"
-  integrity sha512-rjt7WHZ54HQng0inMDC+Z3D+b9Ntnu0xWR7cqJtbDafyKKl73G1RwDRRjIYg5DJu7RxQuKW8Cs3fyefoOx9IyA==
+"@skyekiwi/driver@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/driver/-/driver-0.3.2-10.tgz#92fd95411bd209e44f9e88863499c7896adedf1c"
+  integrity sha512-z64CS6doBIgaGMhHwfaBIVcOQ17I2BGRlR7mLcN9lnO3kN+AG46A7QUgVMqrq7opCcwaGG78nqGJivZip913Qg==
   dependencies:
-    "@skyekiwi/crust-network" "0.3.2-8"
-    "@skyekiwi/crypto" "0.3.2-8"
-    "@skyekiwi/file" "0.3.2-8"
-    "@skyekiwi/ipfs" "0.3.2-8"
-    "@skyekiwi/metadata" "0.3.2-8"
-    "@skyekiwi/util" "0.3.2-8"
-    "@skyekiwi/wasm-contract" "0.3.2-8"
+    "@skyekiwi/crust-network" "0.3.2-10"
+    "@skyekiwi/crypto" "0.3.2-10"
+    "@skyekiwi/file" "0.3.2-10"
+    "@skyekiwi/ipfs" "0.3.2-10"
+    "@skyekiwi/metadata" "0.3.2-10"
+    "@skyekiwi/util" "0.3.2-10"
+    "@skyekiwi/wasm-contract" "0.3.2-10"
 
-"@skyekiwi/file@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/file/-/file-0.3.2-8.tgz#3b8340183888bd04cd0d8deb5f670fca6f286d75"
-  integrity sha512-56cCyysVtusDk140+Edku2FtNJzhT31r3U6ZqnT4tMEmVm8CViFg/VjkHlFI5lqn+h8fl9vYg0J/cKv8v//VRw==
+"@skyekiwi/file@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/file/-/file-0.3.2-10.tgz#ed0c9c68e7d67d97c01732d05961e3426ebbd468"
+  integrity sha512-Svn4GUY1+xCt+KVIQHKMETJcjlCdxcQmu4oXpZRuPPzECeMmEA21jiZa61IKGiPQ39hYPp0RUsdBpcKzwiRoiw==
   dependencies:
     file-saver "^2.0.5"
     pako "^2.0.4"
 
-"@skyekiwi/ipfs@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/ipfs/-/ipfs-0.3.2-8.tgz#6d650739755c9af4088b6f1f6c3f98b285d5642a"
-  integrity sha512-PECtOS8H0J0EP489D9cmSWztyjGhLwMHvjrsMON4cpsOh2SeGQjboyFmP4vIh9aF9dOrQ39jYxcOmzo5hgD7iw==
+"@skyekiwi/ipfs@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/ipfs/-/ipfs-0.3.2-10.tgz#5e8a172e0f7e421db8e0d247fbe36d3af514cb63"
+  integrity sha512-Xnf7QK4d7YSGP/hWj0j8BHXl2WmoDYwgn0cm3YcWa65X/Xj4EVlGHRJc8H0nIo7mLBruyilE7BOQ2R36F/3G3A==
   dependencies:
-    "@skyekiwi/util" "0.3.2-8"
+    "@skyekiwi/util" "0.3.2-10"
     got "^11.8.2"
     ipfs-http-client "52.0.5"
     node-fetch "2.6.1"
 
-"@skyekiwi/metadata@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/metadata/-/metadata-0.3.2-8.tgz#01bd5520bff01ea69ad481b32188cbf160895148"
-  integrity sha512-HxYNZ9GclfXDjF+wu7p3sw/UIJCmh70SdBajN03uFeIuw1FhEvuEVS3IDP8KV/YYDCGMy7VU+rOwesupZWHxQA==
+"@skyekiwi/metadata@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/metadata/-/metadata-0.3.2-10.tgz#49664948a7799c1293b3fc21bd8f0c1eadcfe040"
+  integrity sha512-BkJI3qlMk74RJzxbF8QKoXaxcHI2mU/Bxodl0W3syyKDbW3mSBA7K8EtOOp/Hsp03naEEHc+fPTJPFCjpWr2Ew==
   dependencies:
     "@polkadot/util-crypto" "^7.4.1"
-    "@skyekiwi/crypto" "0.3.2-8"
-    "@skyekiwi/ipfs" "0.3.2-8"
-    "@skyekiwi/util" "0.3.2-8"
+    "@skyekiwi/crypto" "0.3.2-10"
+    "@skyekiwi/ipfs" "0.3.2-10"
+    "@skyekiwi/util" "0.3.2-10"
     tweetnacl "^1.0.3"
 
 "@skyekiwi/secrets@^2.0.1":
@@ -721,27 +721,27 @@
   resolved "https://registry.yarnpkg.com/@skyekiwi/secrets/-/secrets-2.0.1.tgz#b14bdd53651332cf20c1ab2f9ffc4ae9b389cad5"
   integrity sha512-qecFhKiRWzGOM/dh1+59prvFpT3VESvD9Gw2f5YBLcrrkG1cWQ8l1d3wepl/EDp5GIM0VEDsTvmx8Xnw6N0jAg==
 
-"@skyekiwi/util@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/util/-/util-0.3.2-8.tgz#775cb855c4aa4cda2353caf500a0bfae5b3454a7"
-  integrity sha512-5UnQ4bpQ8XvC+ilfwD/2uhjvogT4iEI0CeRPNQEoqpPVEdutbh4gaHnr9NLwqbVyhfyKWfV/mr2f47HRJEcFlw==
+"@skyekiwi/util@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/util/-/util-0.3.2-10.tgz#3df14e6b5f966d0fc9ec692b20ace8dd6c7684df"
+  integrity sha512-vH10Oeu8iRCFx0MncSlWljMxcin0x3+2rNiWeW2Nszw8TZl3ctGpjgY8XTfmKlPVG/uk5IrvNuiWD7tdXgdxFQ==
   dependencies:
     "@polkadot/api" "^6.0.5"
     "@polkadot/keyring" "^7.4.1"
     pino "^7.0.0-rc.1"
     pino-pretty "^5.1.2"
 
-"@skyekiwi/wasm-contract@0.3.2-8":
-  version "0.3.2-8"
-  resolved "https://registry.yarnpkg.com/@skyekiwi/wasm-contract/-/wasm-contract-0.3.2-8.tgz#a859f297de0102d2c788b37fbb7e26bc0c5228e0"
-  integrity sha512-6HwBxJ4O7WbQGtnKNGgeBWexPCQvlxJQMVEAKakchNbmMFgfMWjD2tBvhebtHnLQiA7WMLgegU0lXnVOtgpd1w==
+"@skyekiwi/wasm-contract@0.3.2-10":
+  version "0.3.2-10"
+  resolved "https://registry.yarnpkg.com/@skyekiwi/wasm-contract/-/wasm-contract-0.3.2-10.tgz#03aa8511979fcaae27721d2b20cc2b68cd787305"
+  integrity sha512-+T2Ib9tPqtZ/2+MQ5UiwgYnspY+UU4SpWtqHmsWQEG+4x3xLyIVus/0/PKUU9JHLFq4GxUJBDF9+CkEdgetl+w==
   dependencies:
     "@polkadot/api" "^6.0.5"
     "@polkadot/api-contract" "^6.0.5"
     "@polkadot/keyring" "^7.4.1"
     "@polkadot/types" "^6.0.5"
     "@polkadot/wasm-crypto" "^4.2.1"
-    "@skyekiwi/util" "0.3.2-8"
+    "@skyekiwi/util" "0.3.2-10"
 
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
