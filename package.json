@@ -1,0 +1,22 @@
+{
+  "name": "dkyc-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "keys": "npx ts-node generate-keys.ts > keys.ts"
+  },
+  "dependencies": {
+    "@polkadot/util-crypto": "^7.9.2",
+    "@skyekiwi/crust-network": "0.3.2-8",
+    "@skyekiwi/driver": "0.3.2-8",
+    "@skyekiwi/file": "0.3.2-8",
+    "@skyekiwi/ipfs": "0.3.2-8",
+    "@skyekiwi/metadata": "0.3.2-8",
+    "@skyekiwi/util": "0.3.2-8",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
